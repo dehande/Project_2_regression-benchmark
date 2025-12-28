@@ -23,6 +23,18 @@ Option A — Run in Google Colab:
 Option B — Run locally:
 - Requires Python + common ML stack (pandas, numpy, scikit-learn)
 
+## Methods
+- Data split: train/test (fixed random_state for reproducibility)
+- Feature expansion: PolynomialFeatures (degree=5) to increase model capacity
+- Regularization: Ridge and Lasso (alpha tuning) to control overfitting and improve generalization
+- Metric: MAE on train and test, plus generalization gap (test_mae - train_mae)
+- Interpretability: Lasso sparsity via zero coefficients (feature selection effect)
+
+## What I learned
+- A more complex model is not automatically better: in this dataset, the simple linear baseline generalized best.
+- Regularization trades off bias vs variance; alpha tuning is critical to avoid underfitting/overfitting.
+- Lasso can simplify models by removing unnecessary polynomial terms (coefficients exactly zero), improving interpretability.
+
 ## Key result (summary)
 
 In this dataset, the baseline linear model (degree=1) achieved the lowest test MAE.
