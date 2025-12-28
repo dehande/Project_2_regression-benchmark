@@ -28,6 +28,10 @@ Option B — Run locally:
 In this dataset, the baseline linear model (degree=1) achieved the lowest test MAE.
 Lasso reduced model complexity by zeroing out some polynomial terms.
 
+## Results (snapshot)
+![Results — Complex Regression Benchmark](Proje2_results.jpg)
+
+**Key takeaway:** In this dataset, the baseline linear model (degree=1) achieved the lowest test MAE and the smallest generalization gap. Lasso reduced complexity by zeroing out polynomial terms.
 ## Files
 - `Proje2_Complex_Regression_Model.ipynb` — main notebook
 
